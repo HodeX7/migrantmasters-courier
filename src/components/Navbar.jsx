@@ -4,8 +4,7 @@ import Button from "./ui/Button";
 const Navbar = () => {
   return (
     <div
-      style={{ backgroundColor: "#253138" }}
-      className="flex justify-between py-5 px-16"
+      className="bg-background w-screen py-5 px-16 z-10 flex items-center justify-between fixed top-0 text-white"
     >
       <div>
         <h1>Courier Service</h1>
