@@ -14,7 +14,7 @@ const FormData = () => {
       <Navbar />
       <div className="px-20 py-32">
         <div className="flex flex-col bg-white w-1/2 px-10 py-24 rounded-lg">
-          <h1 className="text-black flex justify-center font-semibold text-2xl mb-10">
+          <h1 className="text-black flex justify-center font-semibold text-2xl mb-10git ">
             Sender's Details
           </h1>
           <Form
