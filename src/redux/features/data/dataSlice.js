@@ -15,7 +15,11 @@ const initialState = {
     location: null,
   },
   distance: null,
-  packageType: null,
+  packageType: {
+    name: "",
+    price: "",
+    deliveryTime: "",
+  },
 };
 
 const dataSlice = createSlice({
