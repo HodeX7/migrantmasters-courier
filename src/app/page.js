@@ -145,7 +145,7 @@ export default function Home() {
         </div>
         <div className="flex items-center justify-center space-x-8 mt-12 z-[2] px-20">
 
-          <div className="flex flex-col items-center px-6 bg-white rounded-xl py-4">
+          <div className="flex flex-col items-center px-6 bg-white rounded-xl">
             <div className="w-[6rem] h-[6rem] bg-gray flex items-center justify-center rounded-full bg-red-500">image</div>
             <h2 className="text-xl font-medium mt-4 mb-1">Emily Rose</h2>
             <h2 className="text-md font-medium">Teacher</h2>
