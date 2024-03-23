@@ -10,9 +10,12 @@ import {
 import { useDispatch } from "react-redux";
 import { setSenderData } from "@/redux/features/data/dataSlice";
 import Button from "@/components/ui/Button";
-import { permanentRedirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const FormData = () => {
+
+  const router = useRouter()
+
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
@@ -24,7 +27,7 @@ const FormData = () => {
       setLoading(false);
       console.log("Form submitted:", values);
       dispatch(setSenderData(values));
-      permanentRedirect("/form/receiverDetails/");
+      router.push("/form/receiverDetails/");
     }, 1000);
   };
 

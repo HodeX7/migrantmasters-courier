@@ -57,7 +57,7 @@ const Cart = () => {
       }}
     >
       <div className="flex justify-center w-screen mt-20 items-center ">
-        <div className="bg-white w-11/12 mt-14 h-full">
+        <div className="text-white w-11/12 mt-14 h-full">
           <h1 className="flex justify-center items-center py-10 font-bold text-5xl">
             Complete your Order
           </h1>
@@ -69,10 +69,10 @@ const Cart = () => {
                 {/* Email */}
                 <div className="my-10">
                   <div className="flex justify-between mb-4 items-center">
-                    <h1 className="text-2xl font-bold">Customer Infomation</h1>
-                    <h2>
+                    <h1 className="text-2xl font-bold text-white">Customer Infomation</h1>
+                    <h2 className="text-gray-500">
                       Already have an account?{" "}
-                      <span className="text-background font-semibold cursor-pointer">
+                      <span className="text-white font-semibold cursor-pointer">
                         Login
                       </span>
                     </h2>
@@ -95,7 +95,7 @@ const Cart = () => {
                 {/* Billing Address */}
                 <div className="my-10">
                   <div className="flex justify-between items-center mb-4">
-                    <h1 className="text-2xl font-bold">Billing & Shipping</h1>
+                    <h1 className="text-2xl font-bold text-white">Billing & Shipping</h1>
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
@@ -256,7 +256,7 @@ const Cart = () => {
                 </div>
 
                 <div className="my-10">
-                  <div className="flex flex-col justify-between mb-4 ">
+                  <div className="flex flex-col justify-between mb-4 text-white">
                     <h1 className="text-2xl font-bold mb-4">
                       Additional Information
                     </h1>

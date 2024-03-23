@@ -10,9 +10,11 @@ import {
 import { useDispatch } from "react-redux";
 import { setReceiverData } from "@/redux/features/data/dataSlice";
 import Button from "@/components/ui/Button";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const FormData = () => {
+ 
+  const router = useRouter()
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
@@ -24,7 +26,7 @@ const FormData = () => {
       setLoading(false);
       console.log("Form submitted:", values);
       dispatch(setReceiverData(values));
-      redirect("/cart");
+      router.push("/cart");
     }, 1000);
   };
 
