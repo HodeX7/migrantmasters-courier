@@ -16,12 +16,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="root w-full h-full relative flex justify-center bg-background">
+        <div className="root w-fit h-full relative flex flex-col justify-center bg-background">
           <Navbar />
           <Providers>{children}</Providers>
+          <Footer />
         </div>
-
-        <Footer />
       </body>
     </html>
   );
