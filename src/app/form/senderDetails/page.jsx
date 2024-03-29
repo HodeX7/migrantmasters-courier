@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Form, Input, ConfigProvider } from "antd";
+import Image from "next/image"
 import {
   MailOutlined,
   PhoneOutlined,
@@ -113,7 +114,9 @@ const FormData = () => {
             </Form.Item>
           </Form>
         </div>
-        <div className="w-1/2 ml-24">IMAGE</div>
+        <div className="w-1/2 ml-24 flex items-center">
+          <Image src={`/user_form.gif`} width={500} height={500} />
+        </div>
       </div>
     </ConfigProvider>
   );

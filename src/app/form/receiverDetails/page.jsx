@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Form, Input, Row, Col, ConfigProvider } from "antd";
+import Image from "next/image"
 import {
   MailOutlined,
   PhoneOutlined,
@@ -13,7 +14,7 @@ import Button from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
 
 const FormData = () => {
- 
+
   const router = useRouter()
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
@@ -26,7 +27,7 @@ const FormData = () => {
       setLoading(false);
       console.log("Form submitted:", values);
       dispatch(setReceiverData(values));
-      router.push("/cart");
+      router.push("/form/package");
     }, 1000);
   };
 
@@ -115,7 +116,9 @@ const FormData = () => {
             </Form.Item>
           </Form>
         </div>
-        <div className="w-1/2 ml-24">IMAGE</div>
+        <div className="w-1/2 ml-24 flex items-center">
+          <Image src={`/user_form.gif`} width={500} height={500} />
+        </div>
       </div>
     </ConfigProvider>
   );

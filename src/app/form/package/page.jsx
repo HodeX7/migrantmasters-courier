@@ -4,9 +4,10 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { setPackageType } from "@/redux/features/data/dataSlice";
 import Button from "@/components/ui/Button";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const Package = () => {
+  const router = useRouter()
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
 
@@ -40,7 +41,7 @@ const Package = () => {
   const handleSelectPackage = (value) => {
     // console.log("Selected package:", value);
     dispatch(setPackageType(value));
-    redirect("/cart");
+    router.push("/cart");
   };
 
   return (
